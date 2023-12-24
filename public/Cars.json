@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "brand": "Audi",
+      "image_url": "https://i.ibb.co/sjdsTwt/01-2.png"
+    },
+    {
+      "id": 2,
+      "brand": "BMW",
+      "image_url": "https://i.ibb.co/Q9q7zw4/06.png"
+    },
+    {
+      "id": 3,
+      "brand": "Mercedes",
+      "image_url": "https://i.ibb.co/3Rxwhk7/05.png"
+    },
+    {
+      "id": 4,
+      "brand": "Toyota",
+      "image_url": "https://i.ibb.co/QbrcMs8/04.png"
+    },
+    {
+      "id": 5,
+      "brand": "Honda",
+      "image_url": "https://i.ibb.co/Ct4CNtQ/03.png"
+    },
+    {
+      "id": 6,
+      "brand": "Ford",
+      "image_url": "https://i.ibb.co/R3Yk1Vv/02.png"
+    }
+  ]
+  
