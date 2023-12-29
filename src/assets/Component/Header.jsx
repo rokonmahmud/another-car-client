@@ -28,7 +28,7 @@ const Header = () => {
         {" "}
         <NavLink
           className={`text-xl hover:bg-white focos:bg-white text-black`}
-          to={"/pricing"}
+          to={"/my-cart"}
         >
           My Cart
         </NavLink>

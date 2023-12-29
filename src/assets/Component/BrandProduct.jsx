@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 
 const BrandProduct = ({ brand }) => {
-  const {_id, brandName, name, price, imgUrl, description } = brand;
+  const {_id, type, brandName, name, price, imgUrl, description } = brand;
   console.log(brand);
   return (
     <div className="">
+      
       <div className="">
         <div className="card  bg-base-100 shadow-xl">
           <figure className="h-40 m-8">
@@ -12,7 +13,8 @@ const BrandProduct = ({ brand }) => {
           </figure>
           <div className="card-body">
             <h2 className="card-title">{name}</h2>
-            <p>{description}</p>
+            
+            <p className="font-semibold">Type: <span>{type}</span></p>
             {/* rating */}
             <div className="rating rating-md">
               <input
@@ -46,10 +48,12 @@ const BrandProduct = ({ brand }) => {
             <p className="text-xl font-semibold">$ {price}</p>
 
             <div className="card-actions justify-end">
-              <button className="btn bg-red-500">Update</button>
+              <Link to={`/updatecars/${brandName}/${_id}`}>
+              <button className="btn bg-red-500 text-white">Update</button>
+              </Link>
               <Link to={`/cars/${brandName}/${_id}`}>
                 {" "}
-                <button className="btn bg-violet-600">Details</button>
+                <button className="btn bg-violet-600 text-white">Details</button>
               </Link>
             </div>
           </div>

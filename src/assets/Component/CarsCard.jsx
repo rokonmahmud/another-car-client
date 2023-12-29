@@ -16,7 +16,7 @@ const CarsCard = ({ car}) => {
       <div>
         <div className="card card-compact rounded-lg p-8 bg-base-100 text-center shadow-xl hover:text-red-500">
           <figure>
-            <img src={image_url} alt="img" />
+            <img className="h-[200px] w-[400px]" src={image_url} alt="img" />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl font-semibold text-center lg:ml-4"> {brand}</h2>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -7,6 +7,8 @@ import toast from "react-hot-toast";
 const Login = () => {
 
 const {login} = useContext(AuthContext)
+const navigate = useNavigate();
+const location = useLocation()
 const handlelogin = (e) => {
   e.preventDefault();
  //  get filds values
@@ -33,7 +35,7 @@ const handlelogin = (e) => {
    login(email, password)
      .then(res => console.log(res.user))
      .catch(error => console.log(error))
-  
+     navigate(location?.state? location.state: "/")
  };
 
   return (

@@ -3,6 +3,8 @@ import SocialLogin from "./SocialLogin";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
+import {  updateProfile } from "firebase/auth";
+import { auth } from "../../Config/firebaseConfig";
 
 const Registration = () => {
   const { creatUser } = useContext(AuthContext);
@@ -35,6 +37,11 @@ const Registration = () => {
       .then(res => console.log(res.user))
       .catch(error => console.log(error))
    
+      // updateProfile(auth.currentUser, {
+      //   displayName : name,
+      //   photoURL : photoURL
+      // })
+      
   };
 
   return (
